@@ -60,13 +60,23 @@
 
 &gem0 {
 	status = "okay";
-	phy-mode = "rgmii-id";
-	phy-handle = <&phy0>;
 
-	phy0: phy@0 { /* Marvell 88e1512 */
-		reg = <0>;
-		compatible = "ethernet-phy-ieee802.3-c22";
+	phy-handle = <&phy0>;
+	phy-mode = "rgmii-rxid";
+	xlnx,has-mdio = <0x1>;
+	gmii2rgmii-phy-handle = <&gmii_to_rgmii_0>;
+	phy0: phy@1 {
+		compatible = "ethernet-phy-id011c.c916";
+		device_type = "ethernet-phy";
+		reg = <0x1>;
 	};
+
+	gmii_to_rgmii_0: gmiitorgmii@8 {
+		compatible = "xlnx,gmii-to-rgmii-1.0";
+		reg = <0x8>;
+		phy-handle = <&phy0>;
+	};
+
 };
 
 &qspi {

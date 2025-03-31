@@ -1,7 +1,7 @@
 /*
  *
  * Automatically generated file; DO NOT EDIT.
- * U-Boot PlutoSDR 66037653f065d8613e32c46681a2bcf53d8ecb8d-dirty Configuration
+ * U-Boot PlutoSDR 0ae98e843966b9dc8ec9c7b81b327ba58c1cab15-dirty Configuration
  *
  */
 #define CONFIG_CMD_BOOTM 1

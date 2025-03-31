@@ -36,6 +36,14 @@
 `timescale 1ns/100ps
 
 module system_top (
+  output          MDIO_PHY_mdc,
+  inout           MDIO_PHY_mdio_io,
+  input [3:0]     RGMII_rd,
+  input           RGMII_rx_ctl,
+  input           RGMII_rxc,
+  output [3:0]    RGMII_td,
+  output          RGMII_tx_ctl,
+  output          RGMII_txc,
 
   inout   [14:0]  ddr_addr,
   inout   [ 2:0]  ddr_ba,
@@ -118,6 +126,15 @@ module system_top (
 
 
   system_wrapper i_system_wrapper (
+    .MDIO_PHY_mdc(MDIO_PHY_mdc),
+    .MDIO_PHY_mdio_io(MDIO_PHY_mdio_io),
+    .RGMII_rd(RGMII_rd),
+    .RGMII_rx_ctl(RGMII_rx_ctl),
+    .RGMII_rxc(RGMII_rxc),
+    .RGMII_td(RGMII_td),
+    .RGMII_tx_ctl(RGMII_tx_ctl),
+    .RGMII_txc(RGMII_txc),
+
     .ddr_addr (ddr_addr),
     .ddr_ba (ddr_ba),
     .ddr_cas_n (ddr_cas_n),

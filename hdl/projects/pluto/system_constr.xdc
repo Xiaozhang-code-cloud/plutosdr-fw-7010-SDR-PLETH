@@ -1,6 +1,22 @@
 # constraints
 # ad9361 (SWAP == 0x1)
 
+set_property  -dict {PACKAGE_PIN  G17   IOSTANDARD  LVCMOS25} [get_ports  MDIO_PHY_mdio_io]   ;
+set_property  -dict {PACKAGE_PIN  G18   IOSTANDARD  LVCMOS25} [get_ports  MDIO_PHY_mdc]       ;
+set_property  -dict {PACKAGE_PIN  D18   IOSTANDARD  LVCMOS25} [get_ports  RGMII_td[3]]  ;
+set_property  -dict {PACKAGE_PIN  D19   IOSTANDARD  LVCMOS25} [get_ports  RGMII_td[2]]  ;
+set_property  -dict {PACKAGE_PIN  B20   IOSTANDARD  LVCMOS25} [get_ports  RGMII_td[1]]  ;
+set_property  -dict {PACKAGE_PIN  B19   IOSTANDARD  LVCMOS25} [get_ports  RGMII_td[0]]  ;
+set_property  -dict {PACKAGE_PIN  E19   IOSTANDARD  LVCMOS25} [get_ports  RGMII_rd[3]]  ;
+set_property  -dict {PACKAGE_PIN  E18   IOSTANDARD  LVCMOS25} [get_ports  RGMII_rd[2]]  ;
+set_property  -dict {PACKAGE_PIN  D20   IOSTANDARD  LVCMOS25} [get_ports  RGMII_rd[1]]  ;
+set_property  -dict {PACKAGE_PIN  E17   IOSTANDARD  LVCMOS25} [get_ports  RGMII_rd[0]]  ;
+
+set_property  -dict {PACKAGE_PIN  C20   IOSTANDARD  LVCMOS25} [get_ports  RGMII_tx_ctl]  ;
+set_property  -dict {PACKAGE_PIN  A20   IOSTANDARD  LVCMOS25} [get_ports  RGMII_txc]     ;
+set_property  -dict {PACKAGE_PIN  F16   IOSTANDARD  LVCMOS25} [get_ports  RGMII_rx_ctl]  ;
+set_property  -dict {PACKAGE_PIN  H16   IOSTANDARD  LVCMOS25} [get_ports  RGMII_rxc]     ;
+
 set_property  -dict {PACKAGE_PIN  U18  IOSTANDARD LVDS_25 DIFF_TERM TRUE} [get_ports rx_clk_in_p]        
 set_property  -dict {PACKAGE_PIN  U19  IOSTANDARD LVDS_25 DIFF_TERM TRUE} [get_ports rx_clk_in_n]        
 set_property  -dict {PACKAGE_PIN  Y16  IOSTANDARD LVDS_25 DIFF_TERM TRUE} [get_ports rx_frame_in_p]      
@@ -67,6 +83,7 @@ set_property  -dict {PACKAGE_PIN  N16  IOSTANDARD LVCMOS25} [get_ports pl_spi_mo
 
 
 create_clock -period 8.000 -name rx_clk [get_ports rx_clk_in_p]
+create_clock -period  8.000          [get_ports RGMII_rxc]
 
 # probably gone in 2016.4
 
