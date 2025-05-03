@@ -1,5 +1,5 @@
 deps_config := \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.menus \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.menus \
 	Config.in.legacy \
 	package/zstd/Config.in.host \
 	package/zip/Config.in.host \
@@ -1241,7 +1241,7 @@ deps_config := \
 	package/lcms2/Config.in \
 	package/kmsxx/Config.in \
 	package/jpeg-turbo/Config.in.options \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.jpeg \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.jpeg \
 	package/jpeg/Config.in \
 	package/jbig2dec/Config.in \
 	package/jasper/Config.in \
@@ -1323,7 +1323,7 @@ deps_config := \
 	package/tinydtls/Config.in \
 	package/rhash/Config.in \
 	package/pkcs11-helper/Config.in \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.openssl \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.openssl \
 	package/libressl/Config.in \
 	package/libopenssl/Config.in \
 	package/openssl/Config.in \
@@ -3076,11 +3076,11 @@ deps_config := \
 	package/busybox/Config.in \
 	package/Config.in \
 	package/linux-tools/Config.in \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.linux \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.linux \
 	linux/Config.ext.in \
 	linux/Config.in \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.init \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.skeleton \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.init \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.skeleton \
 	system/Config.in \
 	package/gdb/Config.in.host \
 	toolchain/toolchain-external/toolchain-external-custom/Config.in.options \
@@ -3099,7 +3099,7 @@ deps_config := \
 	toolchain/toolchain-external/toolchain-external-codesourcery-aarch64/Config.in.options \
 	toolchain/toolchain-external/toolchain-external-linaro-aarch64/Config.in.options \
 	toolchain/toolchain-external/toolchain-external-arm-aarch64/Config.in.options \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.toolchains \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.toolchains \
 	toolchain/toolchain-external/toolchain-external-custom/Config.in \
 	toolchain/toolchain-external/toolchain-external-bootlin/Config.in \
 	toolchain/toolchain-external/toolchain-external-codesourcery-niosII/Config.in \
@@ -3141,29 +3141,29 @@ deps_config := \
 	arch/Config.in.arm \
 	arch/Config.in.arc \
 	arch/Config.in \
-	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/.br2-external.in.paths \
+	/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/.br2-external.in.paths \
 	Config.in
 
-/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/build/buildroot-config/auto.conf: \
+/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: \
 	$(deps_config)
 
 ifneq "$(SKIP_LEGACY)" ""
-/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/build/buildroot-config/auto.conf: FORCE
+/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
 ifneq "$(BR2_DEFCONFIG)" ""
-/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/build/buildroot-config/auto.conf: FORCE
+/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
 ifneq "$(HOST_GCC_VERSION)" "7"
-/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/build/buildroot-config/auto.conf: FORCE
+/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
-ifneq "$(BASE_DIR)" "/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output"
-/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/build/buildroot-config/auto.conf: FORCE
+ifneq "$(BASE_DIR)" "/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output"
+/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
 ifneq "$(HOSTARCH)" "x86_64"
-/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/build/buildroot-config/auto.conf: FORCE
+/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
-ifneq "$(BR2_VERSION_FULL)" "-g0ae98e8-dirty"
-/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH/buildroot/output/build/buildroot-config/auto.conf: FORCE
+ifneq "$(BR2_VERSION_FULL)" "-g480a304-dirty"
+/home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
 
 $(deps_config): ;

@@ -82,7 +82,7 @@ set_property  -dict {PACKAGE_PIN  N15  IOSTANDARD LVCMOS25} [get_ports pl_spi_mi
 set_property  -dict {PACKAGE_PIN  N16  IOSTANDARD LVCMOS25} [get_ports pl_spi_mosi]
 
 
-create_clock -period 8.000 -name rx_clk [get_ports rx_clk_in_p]
+create_clock -period  4.000 -name rx_clk [get_ports rx_clk_in_p]
 create_clock -period  8.000          [get_ports RGMII_rxc]
 
 # probably gone in 2016.4
