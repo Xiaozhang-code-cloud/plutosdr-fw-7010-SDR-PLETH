@@ -47,7 +47,7 @@ create_iiod_context_attributes() {
 	fi
 
 	echo -e "hw_serial=$serial\n" >> /etc/libiio.ini
-	echo "fw_version=`grep device-fw /opt/VERSIONS | cut -d ' ' -f 2`" >> /etc/libiio.ini
+	echo "fw_version=v0.38" >> /etc/libiio.ini
 	if [ "$USBPID" == "0xb673" ]; then
 		echo ad9361-phy,xo_correction=`cat /sys/bus/iio/devices/${DEV_NAME}/xo_correction` >> /etc/libiio.ini
 		echo ad9361-phy,model=$AD936X_TYPE >> /etc/libiio.ini
@@ -69,7 +69,7 @@ case "$1" in
 	model_variant=`dmesg | grep m25p80 | grep Kbytes | cut -d ' ' -f 3`
 
 	serial=`dmesg | grep SPI-NOR-UniqueID`
-	serial=${serial#*SPI-NOR-UniqueID }
+	serial=104400b83991001212002600b4de64d170
 
 	create_iiod_context_attributes "$model" "$serial" "$model_variant"
 

@@ -3162,7 +3162,7 @@ endif
 ifneq "$(HOSTARCH)" "x86_64"
 /home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
-ifneq "$(BR2_VERSION_FULL)" "-g480a304-dirty"
+ifneq "$(BR2_VERSION_FULL)" "-g247b915-dirty"
 /home/ubuntu/SDR_pluto_Prj/plutosdr-fw-7010-SDR-PLETH-static-ip/buildroot/output/build/buildroot-config/auto.conf: FORCE
 endif
 

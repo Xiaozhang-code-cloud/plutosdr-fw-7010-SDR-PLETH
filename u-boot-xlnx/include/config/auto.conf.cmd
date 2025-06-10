@@ -641,7 +641,7 @@ deps_config := \
 include/config/auto.conf: \
 	$(deps_config)
 
-ifneq "$(UBOOTVERSION)" "PlutoSDR 480a30491cf1a67348afadbc91892d59faddf4b8-dirty"
+ifneq "$(UBOOTVERSION)" "PlutoSDR 247b915e79e6670667bc2d481b7678cfafd31967-dirty"
 include/config/auto.conf: FORCE
 endif
 
